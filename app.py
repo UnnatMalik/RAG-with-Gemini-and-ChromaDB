@@ -44,7 +44,7 @@ def split_text(text,chunk_size=1000,chunk_overlap=20):
         start = end - chunk_overlap
     return chunks
 
-directory_path = "./news_articles"
+directory_path = "./data/news_articles"
 documents = load_text_document(directory_path)
 print(f"Loaded {len(documents)} documents")    
 
